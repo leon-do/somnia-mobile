@@ -60,6 +60,11 @@ createAppKit({
   },
   wagmiConfig,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration
+  features: {
+    email: true,
+    emailShowWallets: false,
+    socials: [], // "apple", "x", "discord"
+  },
 });
 
 export default function RootLayout() {
